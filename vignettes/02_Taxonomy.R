@@ -33,6 +33,9 @@ sci_names <-
   prefilter_database %>%
   dplyr::pull(scientificName)
 
+Encoding(sci_names) <- "UTF-8"
+
+
 
 # Download databases ------------------------------------------------------
 # Taxonomic authority
